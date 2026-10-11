@@ -1,0 +1,29 @@
+{
+  "GUI version": "0.4.5",
+  "continuous": [
+    {
+      "folder_name": "EMG-SIM-2.0/",
+      "sample_rate": 1000,
+      "source_processor_name": "LTSpice Simulator",
+      "source_processor_id": 100,
+      "source_processor_sub_idx": 0,
+      "recorded_processor": "LTSpice Simulator",
+      "recorded_processor_id": 100,
+      "num_channels": 1,
+      "channels": [
+        {
+          "channel_name": "CH0",
+          "description": "V(LOGGER-CF), sem alterar amplitude; offset DC nominal retirado",
+          "identifier": "genericdata.continuous",
+          "history": "LTSpice Simulator",
+          "bit_volts": 2.5,
+          "units": "uV",
+          "source_processor_index": 0,
+          "recorded_processor_index": 0
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "spikes": []
+}
