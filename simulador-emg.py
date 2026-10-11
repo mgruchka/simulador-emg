@@ -113,6 +113,7 @@ def txt_export(sim_name, matrix1, matrix2, timelength):
     print(f"Arquivos exportados em: {os.path.join(cwd, f"{sim_name}_e1.txt")} e {os.path.join(cwd, f"{sim_name}_e2.txt")}.")
     print("Informe o tempo de medição em '.tran 0 **TEMPO** 0 10u' no LTSpice antes de rodar sua simulação.")
 
+
 def emg_simulator(st=None, n_mu=None, strength=None, sim_name=None, mostrar=True):
     '''UI simples para obter os parâmetros da simulação.'''
 
@@ -141,7 +142,6 @@ def emg_simulator(st=None, n_mu=None, strength=None, sim_name=None, mostrar=True
     e1, e2 = muap_sum(e1, e2, unidades_ativas, FS, st, faixa)
     bipolar = e1 - e2  # visualização; entradas individuais são exportadas
     txt_export(sim_name, e1, e2, tempo)
-
 
 
 def txt2dat_emg(ltsp_file=None, inicio_s=0.5, nome_saida='Simulacao_OpenEphys'):
